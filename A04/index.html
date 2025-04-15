@@ -30,6 +30,20 @@
       background-color: #C5B9DC;
     }
 
+    .btn-custom {
+      background-color: #d6c2eb;
+      padding: 8px 16px;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .btn-custom:hover {
+      background-color: #b8a3d6;
+      transform: scale(1.05);
+    }
+
     .footer-container {
       background-color: #C5B9DC;
       padding: 1rem 0;
@@ -45,9 +59,7 @@
 
 <body>
   <div class="container mt-2 mb-2 ms-2">
-    <button class="btn btn-outline-dark" onclick="history.back()">
-      &#8592; Back
-    </button>
+    <button class="btn btn-custom" onclick="history.back()"></button>
   </div>
   <div class="container-fluid bg-header rounded-3 py-4">
     <div class="text-center text-black">
