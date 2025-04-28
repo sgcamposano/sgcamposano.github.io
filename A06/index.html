@@ -1,0 +1,190 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity 6 | Gallery Showcase</title>
+  <link rel="icon" href="img/icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function hoverIn(id) {
+      var btn = document.getElementById(id);
+      btn.style.backgroundColor = "#bba3d3";
+      btn.style.color = "#000000";
+      btn.classList.add("shadow");
+    }
+
+    function hoverOut(id) {
+      var btn = document.getElementById(id);
+      btn.style.backgroundColor = "#d2c1e3";
+      btn.style.color = "#000000";
+      btn.classList.remove("shadow");
+    }
+
+    function showFooter() {
+      document.getElementById("footer").style.display = "block";
+      document.getElementById("footerShow").style.display = "none";
+    }
+
+    function hideFooter() {
+      document.getElementById("footer").style.display = "none";
+      document.getElementById("footerShow").style.display = "block";
+    }
+  </script>
+
+  <nav class="navbar navbar-expand-lg px-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html"><i class="bi bi-house-door-fill"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse ms-auto" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item px-3"><a class="nav-link" href="#home">HOME</a></li>
+          <li class="nav-item px-3"><a class="nav-link" href="#about">ABOUT</a></li>
+          <li class="nav-item px-3"><a class="nav-link" href="#top-songs">NIKI'S SONG</a></li>
+          <li class="nav-item px-3"><a class="nav-link" href="#contacts">CONTACTS</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="home" class="hero text-center">
+    <img src="img/CoverNIKI.png" alt="NIKI">
+    <div class="hero-text">
+      <h1 class="display-5 fw-bold">NICOLE ZEFANYA</h1>
+      <p class="lead" style="color: rgb(179, 179, 179);">SINGER-SONGWRITER</p>
+    </div>
+  </section>
+  <section id="about" class="text-center">
+    <div class="container">
+      <h1 class="fw-bold py-5 pb-4">ABOUT</h1>
+      <p><strong>Nicole Zefanya</strong>, professionally known as <strong>NIKI</strong>, is an Indonesian
+        singer-songwriter, record producer, and global
+        music sensation. Born on <strong>January 24, 1999</strong>, in <strong>Jakarta, Indonesia</strong>, she emerged
+        as a breakout star in the
+        alternative R&B and pop scenes. NIKI began cultivating her musical talents at a young age, inspired by her
+        mother's gospel singing and her own love for storytelling through song. As a teenager, she gained early
+        recognition by posting acoustic covers and original tracks on YouTube, which showcased her soulful voice and
+        lyrical maturity. Her big break came in <strong>2017</strong> when she joined <strong>88rising</strong>, a
+        prominent music collective focused on
+        Asian talent, which catapulted her into the global spotlight. Since then, she has released critically acclaimed
+        projects like <strong>Zephyr (2018)</strong>, <strong>Moonchild (2020)</strong>, <strong>Nicole (2022)</strong>,
+        and <strong>Buzz (2024)</strong>. Known for her poetic
+        songwriting, genre-bending sound, and deep emotional resonance, NIKI has built a loyal international fanbase. As
+        of <strong>April 2025</strong>, she has accumulated over <strong>4.4 billion streams on Spotify</strong>, making
+        her the most-streamed Indonesian
+        artist of all time. Her influence extends beyond music—she’s become a symbol of <strong>Southeast Asian
+          pride</strong> and a
+        trailblazer for Asian women in Western pop culture</p>
+
+      <section class="career-section text-center">
+        <div class="container">
+          <h1 class="fw-bold py-5 pb-4 pt-4">CAREER</h1>
+          <p><strong>NIKI</strong> began her music career by uploading acoustic covers and original songs to her
+            <strong>YouTube channel</strong>,
+            <strong> @nzee24</strong>, during her teenage years, quickly gaining a loyal fanbase. <strong>At just
+              15</strong>, she won a competition to
+            open for <strong>Taylor Swift in Jakarta during the Red Tour in 2014</strong>, a pivotal moment in her early
+            career. In <strong>2017</strong>,
+            she joined the American music collective <strong>88rising</strong>, which focuses on promoting Asian talent,
+            launching her
+            onto the global stage. Her debut EP, <strong>Zephyr (2018)</strong>, <strong>blended R&B and pop</strong>,
+            establishing her unique sound. In
+            <strong>2020</strong>, she released <strong>Moonchild</strong>, a concept album about identity and
+            self-discovery, inspired by her move from
+            Jakarta to the U.S. Her second album, <strong>Nicole (2022)</strong>, revisited and reimagined songs she
+            wrote in her youth,
+            offering deeply personal and nostalgic storytelling. In <strong>2024</strong>, she released her third album,
+            <strong>Buzz</strong>, which
+            explored the emotional complexities of adulthood and was accompanied by a global tour across
+            <strong>Asia</strong>,
+            <strong>Australia</strong>, <strong>Europe</strong>, and <strong>North America</strong>. Among her notable
+            achievements, <strong>she became the first Indonesian solo
+              artist toperform on Jimmy Kimmel Live! in 2024</strong>.
+          </p>
+        </div>
+      </section>
+
+    </div>
+  </section>
+
+  <section id="top-songs" class="text-center">
+    <div class="container">
+      <h1 class="fw-bold py-5 pt-5 pb-5">NIKI’S TOP SONGS</h1>
+      <div class="gallery" id="gallery">
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts">
+    <div class="container text-center py-5 pb-3">
+      <h1 class="fw-bold">CONTACTS</h1>
+      <div class="row justify-content-center mt-4">
+        <div class="col-6 col-md-4">
+          <div id="listenBtn" class="p-3 my-2 text-center rounded-3 pop-btn"
+            style="background-color: rgb(210, 193, 227); color: rgb(0, 0, 0);" onmouseover="hoverIn('listenBtn')"
+            onmouseleave="hoverOut('listenBtn')">
+            Listen to NIKI
+          </div>
+          <a href="https://youtube.com/@NIKIZFNY" class="fs-1 text-danger"><i class="bi bi-youtube"></i></a>
+          <a href="https://open.spotify.com/artist/2kxP07DLgs4xlWz8YHlvfh" class="fs-1 text-success"><i
+              class="bi bi-spotify"></i></a>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div id="socialsBtn" class="p-3 my-2 text-center rounded-3 pop-btn"
+            style="background-color: #C5B9DC; color: #000000; max-width: 450px;" onmouseover="hoverIn('socialsBtn')"
+            onmouseleave="hoverOut('socialsBtn')">
+            Socials
+          </div>
+          <a href="https://www.facebook.com/NIKIZefanya" class="fs-1 text-primary"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/nikizefanya" class="fs-1 text-danger"><i class="bi bi-instagram"></i></a>
+          <a href="https://x.com/nikizefanya" class="fs-1 text-dark"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid p-2 mt-5" id="footerShow" style="background-color: #C5B9DC; color: #000000;">
+      <div class="row  text-center m-0">
+        <div class="col-12 p-2">
+          <div onclick="showFooter()" style="color: #000000; cursor: pointer;">Show Footer</div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-4 mt-5" id="footer" style="background-color: #C5B9DC; color: #000000; display: none;">
+      <div class="row">
+        <div class="col text-center"><small class="text-dark pt-4">© 2025 Shamel G. Camposano | Gallery
+            Showcase.</small>
+          <div onclick="hideFooter()" class="mt-3" style="color: #000000; cursor: pointer;">Hide Footer</div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const songs = [
+        { img: "img/Lowkey.png", title: "LOWKEY" },
+        { img: "img/EverySummertime.png", title: "EVERY SUMMERTIME" },
+        { img: "img/TakeAChanceWithMe.png", title: "TAKE A CHANCE WITH ME" },
+        { img: "img/LaLaLostYou.png", title: "LA LA LOST YOU" },
+        { img: "img/Ocean&Engines.png", title: "OCEANS & ENGINES" },
+        { img: "img/Autumn.png", title: "AUTUMN" },
+        { img: "img/TheApartmentWeWontShare.png", title: "THE APARTMENT WE WON'T SHARE" },
+        { img: "img/BlueMoon.png", title: "BLUE MOON" },
+        { img: "img/YoullBeInMyHeart.png", title: "YOU'LL BE IN MY HEART" },
+        { img: "img/DidYouLikeHerInTheMorning.png", title: "DID YOU LIKE HER IN THE MORNING" },
+        { img: "img/urs.png", title: "URS" },
+        { img: "img/ILikeU.png", title: "I LIKE U" }
+      ];
+
+      const gallery = document.getElementById('gallery');
+      songs.forEach(song => {
+        gallery.innerHTML += `
+              <div class="flip-card">
+                <img src="${song.img}" alt="${song.title}">
+                <h5>${song.title}</h5>
+              </div>
+            `;
+      });
+    </script>
+  </section>
