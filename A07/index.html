@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A07 | Digimon</title>
+  <link rel="icon" href="icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Iceberg&family=Orbitron:wght@400..900&family=Press+Start+2P&display=swap"
+    rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #e1dbed;
+      font-family: "Orbitron", sans-serif;
+      color: #1d1d1d;
+    }
+
+    .navbar {
+      background-color: #c5b9dc;
+      font-family: "Press Start 2P", sans-serif;
+    }
+
+    .nav-link {
+      color: #000000;
+      text-decoration: none;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus,
+    .nav-link.active {
+      color: #000000;
+      text-decoration: none;
+      background-color: transparent;
+    }
+
+    .hero-container {
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
+
+    .hero-img {
+      width: 100%;
+      height: auto;
+      opacity: 0.9;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgb(0, 0, 0);
+      font-family: 'Press Start 2P', sans-serif;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      /* Remove font-size here to use Bootstrap classes instead */
+    }
+
+
+    .section-title {
+      font-weight: bold;
+      text-align: center;
+      margin: 2rem 0 1rem;
+      font-family: "Press Start 2P", sans-serif;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: #c5b9dc;
+      margin-top: 70px;
+    }
+
+    .digivolution-img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .digivolution-text {
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="container-fluid p-0" id="mainHeader">
+    <nav class="navbar navbar-expand-lg navbar-light w-100">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="home-icon.png" alt="Home" class="home-icon" style="width: 50px;" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
+          <ul class="navbar-nav me-3">
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#home">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="Character.html">CHARACTERS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container-fluid p-0" id="home">
+    <div class="hero-container text-center">
+      <img src="DigimonBG.png" alt="Digimon Banner" class="hero-img" />
+      <div class="hero-text fw-bold text-center text-uppercase fs-1 fs-sm-2 fs-md-2 fs-lg-3 fs-xl-4">
+        DIGIMON MONSTER
+      </div>
+
+    </div>
+  </div>
+
+  <section class="container text-center px-3 pt-3" id="about">
+    <h2 class="section-title py-3 pb-4 fs-1">ABOUT</h2>
+    <p class="px-3 mx-1">
+      Digimon (Japanese: デジモン, Hepburn: Dejimon, branded as Digimon: Digital Monsters, stylized as DIGIMON), short for
+      "Digital Monsters" ("デジタルモンスター Dejitaru Monsutā"), is a Japanese media franchise, which encompasses virtual pet
+      toys, anime, manga, video games, films, and a trading card game. The franchise focuses on the eponymous creatures that inhabit a
+      "Digital World", which is a parallel universe that originated from Earth’s various communication networks.
+    </p>
+    <p class="px-3 mx-1">
+      The franchise was created in 1997 as a series of digital pets, and it was intended as the masculine counterpart to
+      Tamagotchi. The creatures were first designed to look cute and iconic even on the devices' small screens. Later
+      developments had them created with a harder-edged style, which was influenced by American comics. The franchise gained momentum
+      with an early video game, Digimon World, originally released in Japan in January 1999. Several anime series and films have been released; The video game
+      series has expanded into various genres, such as role-playing, racing, fighting, and MMORPGs. The franchise generated over $500 million in sales by 2000.
+    </p>
+  </section>
+
+  <section class="container px-3">
+    <h2 class="section-title py-3 pb-4 fs-1">DIGIVOLUTION</h2>
+    <div class="row">
+      <div class="col-12 col-md-6 digivolution-text text-center pt-2">
+        <p>
+          Digimon are born from Digi-Eggs. Digimon grow when consuming programs and data, or when they triumph in
+          battle, allowing them to Digivolve! They eventually die of old age and become Digi-Eggs again.
+        </p>
+        <p>
+          Digivolution is a legendary power, and the process by which a Digimon "ages" and grows up into larger and
+          more powerful forms. Although the word "Digivolution" is a portmanteau for "Digital Evolution".
+        </p>
+        <p>
+          During Digivolution, a Digimon's appearance changes, and many of its other classifications (such as attribute
+          and family) also sometimes do. The Digimon's fighting ability increases significantly, and the resulting
+          Digimon is considered to be of a
+          different species.
+        </p>
+      </div>
+      <div class="col-12 col-md-6 px-3">
+        <img src="Digivolution.png" alt="Digivolution" class="img-fluid digivolution-img" />
+      </div>
+    </div>
+  </section>
+
+  <footer id="mainFooter">
+    © 2025 Shamel G. Camposano. All rights reserved.
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
