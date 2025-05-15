@@ -3,6 +3,41 @@ body {
     font-family: Arial, sans-serif;
 }
 
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .pop-btn {
+    background-color: #646464 !important;
+    color: white !important;
+}
+
+.dark-mode .pop-btn:hover {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .navbar {
+    background-color: #646464;
+    color: white;
+}
+
+body.dark-mode #footer *,
+body.dark-mode #footerShow *,
+.dark-mode .navbar * {
+    color: white !important;
+}
+
+body.dark-mode #footer,
+body.dark-mode #footerShow {
+    background-color: #808080 !important;
+}
+
+.dark-mode .gallery {
+    background-color: #121212;
+}
+
 .navbar {
     background-color: #C5B9DC;
 }

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Digimon Details</title>
+  <link rel="icon" href="icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Iceberg&family=Orbitron:wght@400..900&family=Press+Start+2P&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #e1dbed;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .header {
+      padding: 20px 0;
+      text-align: center;
+      font-family: 'Press Start 2P', sans-serif;
+    }
+
+    .home-icon {
+      width: 50px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      border: 2px solid #a086c9;
+      box-shadow: 0 0 20px rgba(145, 103, 196, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card-img-top {
+      height: 250px;
+      object-fit: contain;
+      padding: 10px;
+    }
+
+    .back-btn {
+      font-family: 'Press Start 2P', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+  <header class="container-fluid p-0" style="background-color: #c5b9dc;">
+    <nav class="navbar navbar-expand-lg navbar-light w-100">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Character.html">
+          <img src="home-icon.png" alt="Home" class="home-icon" />
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container my-5">
+    <div id="digimonDetails" class="row justify-content-center"></div>
+  </div>
+
+  <script>
+    async function loadDigimonDetails() {
+      const params = new URLSearchParams(window.location.search);
+      const name = params.get('name');
+
+      if (!name) {
+        document.getElementById('digimonDetails').innerHTML = '<p class="text-center text-danger">No Digimon selected.</p>';
+        return;
+      }
+
+      try {
+        const response = await fetch('https://digimon-api.vercel.app/api/digimon');
+        const data = await response.json();
+        const digimon = data.find(d => d.name.toLowerCase() === name.toLowerCase());
+
+        if (!digimon) {
+          document.getElementById('digimonDetails').innerHTML = '<p class="text-center text-danger">Digimon not found.</p>';
+          return;
+        }
+
+        const detailHTML = `
+          <div class="col-md-6 col-lg-4">
+            <div class="card text-center p-3">
+              <img src="${digimon.img}" class="card-img-top" alt="${digimon.name}">
+              <div class="card-body">
+                <h3 class="card-title" style="font-family: 'Press Start 2P';">${digimon.name}</h3>
+                <p class="card-text fs-5">Level: <strong>${digimon.level}</strong></p>
+              </div>
+            </div>
+          </div>
+        `;
+
+        document.getElementById('digimonDetails').innerHTML = detailHTML;
+
+      } catch (error) {
+        console.error("Error loading Digimon details:", error);
+        document.getElementById('digimonDetails').innerHTML = '<p class="text-center text-danger">Failed to load data.</p>';
+      }
+    }
+
+    loadDigimonDetails();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
