@@ -164,3 +164,169 @@ footer {
 	padding: 10px;
 	text-align: center;
 }
+@import url('https://fonts.cdnfonts.com/css/inside-out-lowercase');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.title {
+	font-family: 'Inside Out', sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+
+.section-title {
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+img {
+	max-width: 100%;
+	max-height: fit-content;
+	border-radius: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	background-color: rgba(0, 0, 0, 0.5);
+	/* optional dark background */
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	background-size: 60% 60%;
+}
+
+.joy-section,
+.joy-text {
+	font-family: 'Inside Out Lowercase', sans-serif;
+	background-color: #feffad;
+	color: rgb(115, 116, 22);
+	padding: 20px;
+	font-size: 20px;
+}
+
+.joy-section,
+.joy-hover {
+	box-shadow: 0 0 20px rgba(244, 255, 97, 0.9), 0 8px 20px rgba(243, 255, 79, 0.6);
+	border: 2px solid #d9dd01;
+}
+
+.sadness-section,
+.sadness-text {
+	font-family: 'Inside Out Lowercase', sans-serif;
+	background-color: #9cc2ff;
+	color: rgb(69, 94, 141);
+	padding: 20px;
+	font-size: 20px;
+}
+
+.sadness-section,
+.sadness-hover {
+	box-shadow: 0 0 20px rgba(116, 137, 255, 0.9), 0 8px 20px rgba(112, 114, 255, 0.6);
+	border: 2px solid #5667ff;
+}
+
+.anxiety-section,
+.anxiety-text {
+	font-family: 'Inside Out Lowercase', sans-serif;
+	background-color: #ffcaad;
+	color: rgb(168, 119, 78);
+	padding: 20px;
+	font-size: 20px;
+}
+
+.anxiety-section,
+.anxiety-hover {
+	box-shadow: 0 0 20px rgba(255, 152, 96, 0.9), 0 8px 20px rgba(255, 127, 58, 0.6);
+	border: 2px solid #ff6f1b;
+}
+
+.anger-section,
+.anger-text {
+	font-family: 'Inside Out Lowercase', sans-serif;
+	background-color: #ffb4b4;
+	color: rgb(133, 55, 55);
+	padding: 20px;
+	font-size: 20px;
+}
+
+.anger-section,
+.anger-hover {
+	box-shadow: 0 0 20px rgba(255, 98, 98, 0.9), 0 8px 20px rgba(255, 79, 79, 0.6);
+	border: 2px solid #ff0000;
+}
+
+.disgust-section,
+.disgust-text {
+	font-family: 'Inside Out Lowercase', sans-serif;
+	background-color: #c7ffc6;
+	color: rgb(76, 147, 66);
+	padding: 20px;
+	font-size: 20px;
+}
+
+.disgust-section,
+.disgust-hover {
+	box-shadow: 0 0 20px rgba(158, 255, 97, 0.9), 0 8px 20px rgba(108, 255, 79, 0.6);
+	border: 2px solid #59ff00;
+}
+
+.envy-section,
+.envy-text {
+	font-family: 'Inside Out Lowercase', sans-serif;
+	background-color: #bbfffc;
+	color: rgb(66, 133, 147);
+	padding: 20px;
+	font-size: 20px;
+}
+
+.envy-section,
+.envy-hover {
+	box-shadow: 0 0 20px rgba(97, 242, 255, 0.9), 0 8px 20px rgba(79, 252, 255, 0.6);
+	border: 2px solid #00d5ff;
+}
+
+.fear-section,
+.fear-text {
+	font-family: 'Inside Out Lowercase', sans-serif;
+	background-color: #ffcef6;
+	color: rgb(147, 85, 137);
+	padding: 20px;
+	font-size: 20px;
+}
+
+.fear-section,
+.fear-hover {
+	box-shadow: 0 0 20px rgba(255, 97, 255, 0.9), 0 8px 20px rgba(255, 79, 249, 0.6);
+	border: 2px solid #f200ff;
+}
+
+.ennui-section,
+.ennui-text {
+	font-family: 'Inside Out Lowercase', sans-serif;
+	background-color: #d1b3e3;
+	color: rgb(136, 75, 151);
+	padding: 20px;
+	font-size: 20px;
+}
+
+.ennui-section,
+.ennui-hover {
+	box-shadow: 0 0 20px rgba(202, 97, 255, 0.9), 0 8px 20px rgba(185, 79, 255, 0.6);
+	border: 2px solid #cc00ff;
+}
+
+footer {
+	font-family: 'Inside Out Lowercase', sans-serif;
+	font-size: 20px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #C5B9DC;
+	color: rgb(0, 0, 0);
+	padding: 10px;
+	text-align: center;
+}
